@@ -1,0 +1,38 @@
+<!--Client ID (Consumer Key)-->
+<!--dj0yJmk9aGE1eUdmT3ZibEJWJmQ9WVdrOU5FRkRiV1V4TkRnbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD01Mg---->
+<!--Client Secret (Consumer Secret)-->
+<!--d5ee93b9b74d9883237c8eea285dd628cfd43620-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Weather Checker 1.0</h1>
+    <p>Input a zip code to get the local weather!</p>
+
+    <form id="weatherCheck" name="weatherCheck" method="post" action="checkWeather.js">
+
+        <label for="zip">
+            <input type="text" name="zipcode" id="zip" placeholder ="Enter a Zipcode" autofocus="autofocus" />
+        </label>
+
+        <button type=submit value="submit" onclick="makeJsonRequest()">Submit</button>
+
+    </form>
+
+    <div id="weatherResponse">
+        <p id="p0"></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="checkWeather.js"></script>
