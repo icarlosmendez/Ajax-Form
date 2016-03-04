@@ -1,4 +1,3 @@
-
 makeJsonRequest = function() {
     var xhr;
     var url;

@@ -1,1 +1,2 @@
-/.idea
+# Idea files (IntelliJ Idea)
+.idea/*
