@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Weather Checker 1.0</h1>
+    <p>Input a zip code to get the local weather!</p>
+
+    <form id="weatherCheck" name="weatherCheck" method="post" action="checkWeather.js">
+
+        <label for="zip">
+            <input type="text" name="zipcode" id="zip" placeholder ="Enter a Zipcode" autofocus="autofocus" />
+        </label>
+
+        <button type=submit value="submit" onclick="makeJsonRequest()">Submit</button>
+
+    </form>
+
+    <div id="weatherResponse">
+        <p id="p0"></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="checkWeather.js"></script>
